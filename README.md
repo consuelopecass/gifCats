@@ -1,5 +1,5 @@
 # gifcats
-
+![GifCats](/src/assets/gifCat.png "'GifCats'")
 ## Project setup
 ```
 yarn install
