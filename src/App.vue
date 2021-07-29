@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="card">
+      <div class="card-title">
+        <h1>Random Gif Cat</h1>
+      </div>
+      <gifcats></gifcats>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
+import Cats from './components/Cats.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    'gifcats': Cats,
   }
 }
 </script>
@@ -24,5 +28,17 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.card {
+  margin: 0 400px;
+}
+
+.card-title {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  background: #54436B;
+  color: #ACFFAD; 
 }
 </style>
